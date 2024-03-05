@@ -1,4 +1,4 @@
-package TestAPI;
+package PartA;
 
 import org.junit.Before;
 import org.junit.Test;

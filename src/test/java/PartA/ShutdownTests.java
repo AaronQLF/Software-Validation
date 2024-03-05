@@ -1,4 +1,4 @@
-package TestAPI;
+package PartA;
 
 import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.given;

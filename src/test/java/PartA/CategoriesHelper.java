@@ -1,4 +1,4 @@
-package TestAPI;
+package PartA;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;

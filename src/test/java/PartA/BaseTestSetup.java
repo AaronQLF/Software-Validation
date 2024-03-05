@@ -1,10 +1,10 @@
-package TestAPI;
+package PartA;
 
 import org.junit.After;
 import org.junit.Before;
 
-import static TestAPI.ApplicationManipulation.EndApplication;
-import static TestAPI.ApplicationManipulation.runApplication;
+import static PartA.ApplicationManipulation.EndApplication;
+import static PartA.ApplicationManipulation.runApplication;
 import static io.restassured.RestAssured.get;
 
 

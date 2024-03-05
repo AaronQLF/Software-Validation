@@ -1,4 +1,4 @@
-package TestAPI;
+package PartA;
 
 import org.json.simple.JSONObject;
 import org.junit.After;
