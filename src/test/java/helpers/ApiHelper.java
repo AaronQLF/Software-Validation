@@ -43,19 +43,27 @@ public class ApiHelper {
         HttpResponse response = null;
         HttpRequestBase http = null;
         switch (type.toLowerCase()) {
-            case "get" -> http = new HttpGet(url);
-            case "post" -> {
+            case "get" : {
+                http = new HttpGet(url);
+                break;
+            }
+            case "post" : {
                 http = new HttpPost(url);
                 ((HttpPost) http).setEntity(stringEntity);
+                break;
+
             }
-            case "delete" -> http = new HttpDelete(url);
-            case "put" -> {
+            case "delete" : http = new HttpDelete(url);
+            case "put" : {
                 http = new HttpPut(url);
                 ((HttpPut) http).setEntity(stringEntity);
+                break;
+
             }
-            case "head" -> http = new HttpHead(url);
-            default -> {
+            case "head" : http = new HttpHead(url);
+            default : {
                 throw new IOException(String.format("Incorrect request type: %s", type));
+
             }
         }
         http.setHeader("Accept", "application/json");

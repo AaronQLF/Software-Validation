@@ -1,5 +1,6 @@
 package response;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,6 +16,7 @@ public class Todo {
     String title;
     Boolean doneStatus;
     String description;
+    @JsonProperty("task-of")
     List<Map<String, String>> tasksof;
     List<Map<String, String>> categories;
 }
